@@ -1,0 +1,204 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.esquerda {
+    background: #5134aa;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.topo {
+    width: 100%;
+    display: flex;
+    height: 10%;
+    align-items: center;
+}
+
+.topo .titulo {
+    width: 80%;
+    padding-left: 20px;
+}
+.topo .titulo h1 {
+    font-size: 34px;
+}
+
+
+.topo .titulo .vazio {
+    width: 90px;
+    height: 6px;
+    background-color: #5134aa;
+    border-radius: 10px;
+    position: absolute;
+    top: 65px;
+}
+
+.topo .btn {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.topo .btn button {
+    width: 100px;
+    height: 35px;
+    background-color: #5134aa;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.meio {
+    display: flex;
+    height: 70%;
+}
+
+.meio .lado {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.meio .lado div {
+    display: flex;
+    flex-direction: column;
+}
+
+.meio .lado div label {
+    font-size: 15px;
+    font-weight: bold;
+    color-scheme: #303030;
+    margin-bottom: 10px;
+}
+
+.meio .lado div input {
+    width: 300px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.meio .lado div input{
+    box-shadow: 1px 2px 4px 0px rgba(71, 71, 71, 0.75);
+}
+
+.fim {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 15%;
+}
+
+.fim .inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/
+.fim .inputs .opcoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fim .inputs p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #303030;
+    margin-left: 30px;
+}
+
+.fim .inputs input {
+    width: 20px;
+    height: 20px;
+}
+
+.fim .inputs .opcoes .opcao {
+    display: flex;
+    align-items: center;
+}
+
+.fim .inputs .opcao label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #303030;
+    margin-top: 3px;
+}
+
+.fim .btn {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.fim .btn button {
+    width: 90%;
+    height: 35px;
+    background-color: #5134aa;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .esquerda {
+        display: none;
+    }
+
+    .direita {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .meio {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+} 
